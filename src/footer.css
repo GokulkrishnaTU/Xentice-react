@@ -1,0 +1,44 @@
+.root{
+    height: 600px;
+    width: 100%;
+    background-color:  #012b72;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+li{
+    text-align: left;
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+}
+
+h5{
+    color: white;
+
+
+}
+
+h2{
+    color: white;
+
+
+}
+p{
+    color: white;
+
+
+}
+
+
+

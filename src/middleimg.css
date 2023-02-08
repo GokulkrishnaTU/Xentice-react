@@ -1,0 +1,32 @@
+.middle-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.middle-left{
+    height: 28vw;
+    width: 60vw;
+}
+
+.img1{
+    height: 28vw;
+    width: 60vw;
+    box-shadow: 0 0 5px 2px rgb(0 0 0 / 49%);
+
+
+}
+
+.middle-right{
+    height: 28vw;
+    width: 30vw;
+}
+
+
+.img2{
+    height: 28vw;
+    width: 30vw;
+    box-shadow: 0 0 5px 2px rgb(0 0 0 / 49%);
+
+
+}

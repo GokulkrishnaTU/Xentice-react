@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+     background-color: #012b72;
+    align-items: center;
+}
+
+.items{
+    min-width: 120px;
+    width: 120px;
+    margin: 5px;    height: 60px;
+    color: white;
+    font-size:10px ;
+    cursor: pointer;
+
+}
+
+.items:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+
+
+}
+
+
+
+

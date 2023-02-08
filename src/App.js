@@ -1,23 +1,44 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import Axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import OffcanvasExample from "./Navbar"
+import Header from './Header';
+import Checkbox from './Checkbox';
+import Sublistheader from './Sublistheader';
+import Middleimg from './Middleimg';
+import Footer from './Footer';
+import Commercialshop from './Commercialshop';
+
 
 function App() {
+
+  async function fourthApi() {
+    const Api = "https://api.xentice.com/api/postadSelect";
+    let details = await Axios.get(Api);
+    console.log("fourth Api", details.data[0].images);
+  }
+  useEffect(()=>{
+    fourthApi()
+
+  },[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <OffcanvasExample/>
+      <Header/>
+      <Checkbox/>
+      <Sublistheader/>
+      <Middleimg/>
+      <Commercialshop/>
+      <Commercialshop/>
+
+      <Commercialshop/>
+
+      <Commercialshop/>
+
+      <Footer/>
+
+
     </div>
   );
 }
